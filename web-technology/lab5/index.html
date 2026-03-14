@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Практика с компонентами Bootstrap</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-light">
+    <header
+      class="container-fluid bg-secondary text-white p-3 d-flex justify-content-between align-items-center"
+    >
+      <div class="fs-4 fw-semibold">WebBrand</div>
+      <button class="btn btn-outline-light btn-sm">Регистрация</button>
+    </header>
+
+    <nav class="navbar navbar-dark bg-info px-3">
+      <div class="navbar-brand fw-bold">WebPortal</div>
+      <form class="d-flex" role="search">
+        <input
+          class="form-control me-2"
+          type="search"
+          placeholder="Поиск по сайту..."
+        />
+        <button class="btn btn-light" type="submit">Искать</button>
+      </form>
+    </nav>
+
+    <section class="container text-center py-5 mt-4 bg-white rounded shadow-sm">
+      <h1 class="mb-2">Добро пожаловать на сайт!</h1>
+      <p class="text-muted">Создавай, учись и вдохновляйся с Bootstrap 5</p>
+      <button class="btn btn-success">Начать</button>
+    </section>
+
+    <section class="card w-50 mx-auto mt-5 p-4 border-0 shadow-sm">
+      <h5 class="fw-bold mb-3 text-center">Авторизация</h5>
+      <input
+        type="email"
+        class="form-control mb-3"
+        placeholder="Введите email"
+      />
+      <input type="password" class="form-control mb-3" placeholder="Пароль" />
+      <button class="btn btn-primary w-100">Войти</button>
+    </section>
+
+    <section class="card w-50 mx-auto mt-5 p-3 border-info border-2">
+      <h5 class="card-title">Новая публикация</h5>
+      <p class="card-text text-secondary">Небольшое вступление к статье...</p>
+      <button
+        class="btn btn-outline-primary"
+        data-bs-toggle="collapse"
+        data-bs-target="#articleBody"
+      >
+        Развернуть текст
+      </button>
+      <div class="collapse mt-3" id="articleBody">
+        <p>
+          Здесь располагается полный текст статьи. Этот раздел сворачивается и
+          разворачивается с помощью компонента Collapse.
+        </p>
+      </div>
+    </section>
+
+    <div class="text-center mt-5">
+      <button
+        class="btn btn-warning"
+        data-bs-toggle="modal"
+        data-bs-target="#modalFeedback"
+      >
+        Оставить отзыв
+      </button>
+    </div>
+
+    <div class="modal fade" id="modalFeedback" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content p-3">
+          <h5 class="fw-bold mb-3">Обратная связь</h5>
+          <input type="text" class="form-control mb-2" placeholder="Ваше имя" />
+          <input
+            type="email"
+            class="form-control mb-2"
+            placeholder="Email для связи"
+          />
+          <textarea
+            class="form-control mb-3"
+            rows="3"
+            placeholder="Сообщение..."
+          ></textarea>
+          <button class="btn btn-success w-100">Отправить</button>
+        </div>
+      </div>
+    </div>
+
+    <section class="container mt-5">
+      <ul class="nav nav-tabs" id="tabsExample" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link active"
+            data-bs-toggle="tab"
+            data-bs-target="#tab-news"
+          >
+            Новости
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            data-bs-toggle="tab"
+            data-bs-target="#tab-blog"
+          >
+            Блог
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            data-bs-toggle="tab"
+            data-bs-target="#tab-contact"
+          >
+            Контакты
+          </button>
+        </li>
+      </ul>
+      <div class="tab-content bg-white p-4 border border-top-0">
+        <div class="tab-pane fade show active" id="tab-news">
+          Последние новости и обновления Bootstrap.
+        </div>
+        <div class="tab-pane fade" id="tab-blog">Статьи о веб-разработке.</div>
+        <div class="tab-pane fade" id="tab-contact">
+          Email: info@webportal.com
+        </div>
+      </div>
+    </section>
+
+    <div class="text-center my-5">
+      <button
+        class="btn btn-secondary"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#sideMenu"
+      >
+        Меню
+      </button>
+    </div>
+
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="sideMenu">
+      <div class="offcanvas-header">
+        <h5 class="fw-bold border-bottom p-2 w-100">Навигация</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="list-group">
+          <li class="list-group-item"><a href="#">Главная</a></li>
+          <li class="list-group-item"><a href="#">Проекты</a></li>
+          <li class="list-group-item"><a href="#">Контакты</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+      <small>© 2025 WebPortal. Все права защищены.</small>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

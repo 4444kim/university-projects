@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta
+      charset="UTF-8"
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=yes, minimum-scale=1, maximum-scale=5"
+    />
+    <title>Personal Page</title>
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to My Personal Page</h1>
+      <p>Hello there! Glad to see you here :)</p>
+    </header>
+
+    <main>
+      <section id="photo">
+        <h2>Featured Picture</h2>
+        <img
+          src="avatar3.jpg"
+          alt="My cat photo"
+          width="280"
+          usemap="#picmap"
+        />
+        <map name="picmap">
+          <area
+            shape="rect"
+            coords="10,10,140,140"
+            href="https://www.nationalgeographic.com/animals/mammals/facts/domestic-cat"
+            alt="Learn about cats"
+            target="_blank"
+          />
+          <area
+            shape="circle"
+            coords="220,180,45"
+            href="https://www.google.com/search?q=adorable+cats"
+            alt="Adorable cats"
+            target="_blank"
+          />
+        </map>
+      </section>
+
+      <section id="about">
+        <h2>Who Am I?</h2>
+        <p>
+          Hey! I'm Alex — an aspiring web developer who enjoys learning HTML,
+          CSS, and JavaScript. I love turning ideas into websites that people
+          can actually use.
+        </p>
+      </section>
+
+      <section id="contact">
+        <h2>Get in Touch</h2>
+        <form>
+          <label>
+            Name:
+            <input type="text" name="username" placeholder="Enter your name" />
+          </label>
+          <br /><br />
+
+          <label>
+            E-mail:
+            <input
+              type="email"
+              name="useremail"
+              placeholder="example@mail.com"
+            />
+          </label>
+          <br /><br />
+
+          <p>Pick your favorite animal:</p>
+          <label><input type="radio" name="animal" value="cat" /> Cat</label
+          ><br />
+          <label><input type="radio" name="animal" value="dog" /> Dog</label
+          ><br />
+          <label
+            ><input type="radio" name="animal" value="hamster" /> Hamster</label
+          >
+          <br /><br />
+
+          <p>What do you like doing?</p>
+          <label
+            ><input type="checkbox" name="interest" value="reading" />
+            Reading</label
+          ><br />
+          <label
+            ><input type="checkbox" name="interest" value="coding" />
+            Coding</label
+          ><br />
+          <label
+            ><input type="checkbox" name="interest" value="traveling" />
+            Traveling</label
+          >
+          <br /><br />
+
+          <label for="msg">Message:</label><br />
+          <textarea
+            id="msg"
+            name="message"
+            rows="5"
+            cols="45"
+            placeholder="Type your message..."
+          ></textarea>
+          <br /><br />
+
+          <input type="submit" value="Submit" />
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>Created by Alex © 2025</p>
+    </footer>
+  </body>
+</html>

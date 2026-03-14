@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Personal Project — Lab 2</title>
+
+    <meta
+      name="description"
+      content="HTML demo page with login and registration forms"
+    />
+    <meta name="author" content="Vladislav Kim" />
+    <meta name="keywords" content="HTML, web, form, practice, layout" />
+    <meta property="og:image" content="preview.jpg" />
+  </head>
+  <body>
+    <nav>
+      <a href="index.html">Main</a>
+      <a href="https://duckduckgo.com" target="_blank" rel="noopener">
+        Search Engine
+      </a>
+    </nav>
+
+    <header>
+      <h1 title="Hover to see the tip">Welcome to My Project</h1>
+      <nav>
+        <ul>
+          <li><a href="about.html">About Page</a></li>
+          <li><a href="https://github.com/">GitHub</a></li>
+          <li>
+            <a href="https://github.com/" target="_blank" rel="noopener">
+              Open GitHub in new tab</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="auth-section">
+        <h2 title="Fill in your login info">Sign In</h2>
+        <form>
+          <label for="user">Login: </label>
+          <input
+            type="text"
+            id="user"
+            name="user"
+            required
+            placeholder="Enter username"
+          />
+          <br /><br />
+
+          <label for="pass">Password: </label>
+          <input
+            type="password"
+            id="pass"
+            name="pass"
+            required
+            placeholder="Enter password"
+          />
+          <br /><br />
+
+          <button type="submit">Sign In</button>
+        </form>
+      </section>
+
+      <section class="registration">
+        <h2>Create an Account</h2>
+        <form id="signupForm">
+          <div>
+            <label for="fullname">Full Name: </label>
+            <input
+              type="text"
+              id="fullname"
+              name="fullname"
+              required
+              placeholder="Your name"
+            />
+            <br /><br />
+          </div>
+
+          <div>
+            <label for="mail">Email Address: </label>
+            <input
+              type="email"
+              id="mail"
+              name="mail"
+              required
+              placeholder="your@email.com"
+            />
+            <br /><br />
+          </div>
+
+          <div>
+            <label for="newpass">Create Password: </label>
+            <input
+              type="password"
+              id="newpass"
+              name="newpass"
+              required
+              placeholder="********"
+            />
+            <br /><br />
+          </div>
+
+          <button type="submit">Register</button>
+        </form>
+      </section>
+    </main>
+
+    <aside>
+      <h3>Resources</h3>
+      <ul>
+        <li>
+          <a href="hz.jpg" download title="Download sample image">
+            Download Image
+          </a>
+        </li>
+        <li>
+          <a href="example.pdf" download title="Download PDF guide">
+            Download PDF
+          </a>
+        </li>
+        <li>
+          <a href="notes.txt" download title="Download text file">
+            Download Notes
+          </a>
+        </li>
+      </ul>
+    </aside>
+  </body>
+</html>

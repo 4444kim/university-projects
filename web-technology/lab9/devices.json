@@ -1,0 +1,23 @@
+[
+  {
+    "type": "Phone",
+    "name": "Galaxy S24",
+    "brand": "Samsung",
+    "price": 450000,
+    "camera": 108
+  },
+  {
+    "type": "Laptop",
+    "name": "MacBook Air M3",
+    "brand": "Apple",
+    "price": 780000,
+    "cpu": "Apple M3"
+  },
+  {
+    "type": "Tablet",
+    "name": "Xiaomi Pad 6",
+    "brand": "Xiaomi",
+    "price": 290000,
+    "screenSize": 11
+  }
+]

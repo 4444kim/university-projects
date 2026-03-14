@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <title>MVC Demo</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>MVC Demonstration Projects</h1>
+    </header>
+
+    <main>
+      <section class="card">
+        <h2>Счётчик</h2>
+
+        <div class="counter-box">
+          <span id="counter" class="counter-value">0</span>
+          <div class="counter-actions">
+            <button id="inc">Увеличить</button>
+            <button id="dec">Уменьшить</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>Калькулятор</h2>
+
+        <div class="calc-grid">
+          <input id="a" type="number" placeholder="Первое число" />
+          <input id="b" type="number" placeholder="Второе число" />
+        </div>
+
+        <div class="calc-ops">
+          <button data-op="+">+</button>
+          <button data-op="-">−</button>
+          <button data-op="*">×</button>
+          <button data-op="/">÷</button>
+        </div>
+
+        <div class="calc-result">Результат: <span id="result">0</span></div>
+      </section>
+
+      <section class="card">
+        <h2>To-Do List</h2>
+
+        <div class="todo-add">
+          <input id="todo-input" placeholder="Введите задачу" />
+          <button id="add">Добавить</button>
+        </div>
+
+        <div class="todo-filters">
+          <button data-filter="all">Все</button>
+          <button data-filter="active">Активные</button>
+          <button data-filter="done">Готовые</button>
+        </div>
+
+        <ul id="todo-list" class="todo-list"></ul>
+      </section>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

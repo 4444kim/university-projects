@@ -1,0 +1,155 @@
+body {
+  margin: 0;
+  background: #f2f4f7;
+  font-family: "Segoe UI", sans-serif;
+  color: #222;
+}
+
+header {
+  background: white;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.07);
+  margin-bottom: 30px;
+}
+
+main {
+  max-width: 900px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.card {
+  background: white;
+  border-radius: 14px;
+  padding: 25px;
+  margin-bottom: 40px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+}
+
+h2 {
+  margin-top: 0;
+}
+
+/* COUNTER */
+.counter-box {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.counter-value {
+  font-size: 3rem;
+  font-weight: bold;
+  padding: 10px 20px;
+  background: #e9eef3;
+  border-radius: 10px;
+}
+
+.counter-actions button {
+  padding: 10px 20px;
+  border: none;
+  background: #4269f5;
+  color: white;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.counter-actions button:hover {
+  background: #2f4fd3;
+}
+
+/* CALCULATOR */
+.calc-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.calc-ops {
+  margin: 15px 0;
+}
+.calc-ops button {
+  padding: 8px 16px;
+  margin-right: 5px;
+  border: none;
+  background: #444;
+  color: white;
+  border-radius: 6px;
+}
+.calc-ops button:hover {
+  background: #111;
+}
+
+.calc-result {
+  font-size: 1.1rem;
+  font-weight: 600;
+  background: #f0f0f0;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+/* TODO */
+.todo-add {
+  display: flex;
+  gap: 10px;
+}
+
+.todo-add input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.todo-add button {
+  padding: 10px 16px;
+  background: #009e4f;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+}
+.todo-add button:hover {
+  background: #007d3e;
+}
+
+.todo-filters button {
+  margin-right: 8px;
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: none;
+  background: #ddd;
+  cursor: pointer;
+}
+.todo-filters button:hover {
+  background: #bbb;
+}
+
+.todo-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.todo-list li {
+  background: #f7f7f7;
+  padding: 10px 12px;
+  border-radius: 6px;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.todo-list button {
+  background: #e63946;
+  border: none;
+  padding: 4px 8px;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.todo-list button:hover {
+  background: #b71c1c;
+}
